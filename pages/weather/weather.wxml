@@ -1,0 +1,53 @@
+<loading hidden="{{loadingStatus}}">
+    加载中...
+</loading>
+<view wx:if="{{userLocation == 3}}" class="box weather_bg list_left">
+  <text class='tips' bindtap='refreshCurrentPage'>
+  定位异常，无法正确获取您的定位信息\n
+  1.请重新刷新页面\n
+  2.尝试换个地方重新刷新页面\n
+  3.晚些时候再刷新页面\n
+  4.非中国境内，无法正确获取\n
+  5.如果上述操作依然存在问题，请联系作者
+  </text>
+</view>
+<view wx:if="{{userLocation == 2}}" class="box city_title list_center">
+  <text class='tips' bindtap='refreshCurrentPage'>
+  没有授权获取定位信息，功能无法使用\n
+  确认授权后，请下拉或者点击文字刷新获取数据
+  </text>
+  <button class='btn' bindtap='gotoAuthPage'>点击开启授权</button>
+</view>
+<view wx:elif="{{userLocation == 1}}">
+  <view class="box city_title">
+    <view class="city">{{cityInfo.addressComponent.city}}</view>
+    <view class="pos">( {{cityInfo.location.lat}} , {{cityInfo.location.lng}} )</view>
+  </view>
+  <view class="box city_info">
+    <view>地址：{{cityInfo.formatted_address}}</view>
+    <view>邮编：{{cityInfo.addressComponent.adcode}}</view>
+    <view>周边：{{cityInfo.business}}</view>
+  </view>
+  <view class='box weather_title'>天气情况</view>
+  <view class="box weather_info">
+    <view class='f_red'>{{weatherInfo.date}}</view>
+    <view>
+      <text class='f_black'>{{weatherInfo.weatherDesc}}</text>
+      <text class='ml20'>{{weatherInfo.temperature}}</text>
+      <text class='ml20'>{{weatherInfo.wind}}</text>
+    </view>
+    <view>PM2.5：{{weatherInfo.pm25}}</view>
+  </view>
+  <block wx:for="{{weatherInfoExt}}" wx:key="index">
+    <block wx:if="{{index > 0}}">
+      <view class="box weather_info">
+        <image wx:if="{{currentTime >= '06' && currentTime < '18'}}" src='{{item.dayPictureUrl}}' mode="aspectFill" class='pic'></image>
+        <image wx:else src='{{item.nightPictureUrl}}' mode="aspectFill" class='pic'></image>
+        <text class='ml20'>{{item.date}}</text>
+        <text class='ml20'>{{item.temperature}}</text>
+        <text class='ml20'>{{item.weather}}</text>
+        <text class='ml20'>{{item.wind}}</text>
+      </view>
+    </block>
+  </block>
+</view>

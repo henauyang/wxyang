@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/operation/operation",
+    "pages/weather/weather",
+    "pages/read/read",
+    "pages/movies/movies",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/duanzi/duanzi",
+    "pages/picture/picture",
+    "pages/pictureDetail/pictureDetail",
+    "pages/edit/deit"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "请求获取你的位置信息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "小应用大作用",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#2e5e86",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/ic_home_normal.png",
+        "selectedIconPath": "imgs/ic_home_pressed.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "提交建议",
+        "iconPath": "imgs/ic_join_normal.png",
+        "selectedIconPath": "imgs/ic_join_pressed.png"
+      },
+      {
+        "pagePath": "pages/edit/deit",
+        "text": "关于作者",
+        "iconPath": "imgs/ic_join_normal.png",
+        "selectedIconPath": "imgs/ic_join_pressed.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="list">
+  <view class="list_one">
+    <view class="list_float " >
+      <navigator class="" url="../movies/movies">
+        <image class='list_logo' src='/imgs/4.jpg'></image>
+        <text class='list_title'>豆瓣</text>
+      </navigator>
+    </view>
+    <view class="list_float ">
+      <navigator class="" url="../search/search">
+        <image class='list_logo' src='/imgs/5.jpg'></image>
+        <text class='list_title'>搜电影</text>
+      </navigator>
+    </view>
+    <view class="list_float">
+      <navigator class="" url="../weather/weather">
+        <image class='list_logo' src='/imgs/6.jpg'></image>
+        <text class='list_title'>天气</text>
+      </navigator>
+    </view>
+    <view class="list_float">
+      <navigator class="" url="../duanzi/duanzi">
+        <image class='list_logo' src='/imgs/7.jpg'></image>
+        <text class='list_title'>段子</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="list_two">
+    <view class="list_float">
+      <navigator class="" url="../picture/picture">
+        <image class='list_logo' src='/imgs/11.jpg'></image>
+        <text class='list_title'>图片</text>
+      </navigator>
+    </view>
+    <view class="list_float">
+      <navigator class="" url="#">
+        <image class='list_logo' src='/imgs/12.jpg'></image>
+        <text class='list_title'>待开发</text>
+      </navigator>
+    </view>
+    <view class="list_float">
+      <navigator class="" url="#">
+        <image class='list_logo' src='/imgs/12.jpg'></image>
+        <text class='list_title'>待开发</text>
+      </navigator>
+    </view>
+    <view class="list_float">
+      <navigator class="" url="#">
+        <image class='list_logo' src='/imgs/12.jpg'></image>
+        <text class='list_title'>待开发</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<swiper class='swiper2' indicator-dots="{{indicatorDots2}}"
+  autoplay="{{autoplay2}}" interval="{{interval2}}" duration="{{duration2}}" vertical="true" circular="true"  mode="widthFix">
+  <block wx:for="{{imgUrls2}}" wx:key="key">
+    <swiper-item>
+      <text class="itme_text2">{{item}}</text>
+    </swiper-item>
+  </block>
+</swiper>

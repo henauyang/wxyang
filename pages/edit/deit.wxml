@@ -1,0 +1,19 @@
+<!--pages/edit/deit.wxml-->
+<view class='content'>
+    <image class='img' src='../../imgs/10.jpg' mode="widthFix"></image>
+    <view class='cont'>
+      <view>
+          <text class='text'>身高：182cm</text>
+      </view>
+      <view>
+          <text class='text'>体重：60kg</text>
+      </view>
+      <view>
+          <text class='text'>爱好：如果有一天，我能胖二十斤，那我就是全天下最开心的小胖纸！</text>
+      </view>
+      <view>
+          <text class='text'>qq：1542446075</text>
+      </view>
+    </view>
+      
+</view>

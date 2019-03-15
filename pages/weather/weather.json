@@ -1,0 +1,6 @@
+{
+  "backgroundColor": "#bbb",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "天气详情"
+}

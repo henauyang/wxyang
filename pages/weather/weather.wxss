@@ -1,0 +1,79 @@
+page{
+  padding:0;
+  background: #fdfdfd;
+}
+view{
+  font-size: 32rpx;
+  color: #333;
+  font-family: "微软雅黑";
+}
+image{
+  text-align: center;
+  vertical-align:middle;
+}
+/* 通用部分 */
+.box{
+  margin: 24rpx;
+  padding: 24rpx;
+  line-height: 180%;
+}
+.box_bg {
+   background: #f0f6fa;
+}
+.list_left{
+  text-align: left;
+  line-height: 100%;
+  padding-left: 40rpx;
+}
+.list_center{
+  text-align: center;
+  line-height: 100%;
+  padding: 0;
+}
+/* 城市信息部分 */
+.city_title{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: -8rpx 0 -20rpx 0;
+  padding-bottom: 0;
+}
+.city_title .btn{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+.city_title .city{
+  font-size: 36rpx;
+  color: #000;
+}
+.city_title .pos{
+  font-size: 32rpx;
+}
+.city_info{
+  border: 1px solid #efefef;
+}
+/* 天气信息部分 */
+.weather_title{
+  margin-bottom: -16rpx;
+  padding-bottom: 0;
+}
+.weather_info{
+  color: #555;
+  border: 1px solid #efefef;
+}
+.weather_info .pic{
+  padding: 0;
+  margin:-4px 0 0 0;
+  width:22px;
+  height:16px
+}
+.weather_info .f_red{
+  color: red;
+}
+.weather_info .f_black{
+  color:black;
+}
+.weather_info .ml20{
+  margin-left: 20rpx;
+}
