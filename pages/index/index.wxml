@@ -46,7 +46,7 @@
         <text class='list_title'>图片</text>
       </navigator>
     </view>
-    <view class="list_float">
+    <!-- <view class="list_float">
       <navigator class="" url="#">
         <image class='list_logo' src='/imgs/12.jpg'></image>
         <text class='list_title'>待开发</text>
@@ -57,11 +57,11 @@
         <image class='list_logo' src='/imgs/12.jpg'></image>
         <text class='list_title'>待开发</text>
       </navigator>
-    </view>
+    </view> -->
     <view class="list_float">
-      <navigator class="" url="#">
+      <navigator class="" url="../gaijin/gaijin">
         <image class='list_logo' src='/imgs/12.jpg'></image>
-        <text class='list_title'>待开发</text>
+        <text class='list_title'>改进</text>
       </navigator>
     </view>
   </view>

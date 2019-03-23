@@ -15,8 +15,8 @@
             <text class="column1">{{item.areaName}}</text>
             <text class="column">{{item.priority}}</text>
             <view class="link-column">
-              <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">编辑</navigator>|
-              <text class="link" bindtap="deleteArea" data-areaid="{{item.areaId}}" data-areaname="{{item.areaName}}" data-index="{{index}}">删除</text>
+              <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">编辑</navigator>
+              <!-- <text class="link" bindtap="deleteArea" data-areaid="{{item.areaId}}" data-areaname="{{item.areaName}}" data-index="{{index}}">删除</text> -->
             </view>
           </view>
         </view>

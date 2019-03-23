@@ -12,7 +12,8 @@
     "pages/duanzi/duanzi",
     "pages/picture/picture",
     "pages/pictureDetail/pictureDetail",
-    "pages/edit/deit"
+    "pages/edit/deit",
+    "pages/gaijin/gaijin"
   ],
   "permission": {
     "scope.userLocation": {

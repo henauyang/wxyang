@@ -18,5 +18,5 @@
   </loading>
 </view>
 <modal title="小提示" confirm-text="知道啦"  hidden="{{modalHidden}}" no-cancel="true" bindconfirm="hideModal">
-  请输入需要查询的关键词，如：天下无贼
+  请输入需要查询的关键词，如：惊奇队长
 </modal>
