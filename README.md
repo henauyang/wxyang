@@ -8,4 +8,4 @@
 
 
 欢迎star
-https://github.com/henauyang/wxyang/blob/yang/imgs/1.gif
+![Alt text](https://github.com/henauyang/wxyang/blob/yang/imgs/1.gif)
