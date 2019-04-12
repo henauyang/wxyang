@@ -28,7 +28,7 @@ Page({
   onShow: function () {
     var that = this;
     wx.request({
-      url: "https://an.jabari.cn/superadmin/listarea",
+      url: "http://localhost:9090/superadmin/listarea",
       data: {},
       method: 'GET',
       success: function (res) {
@@ -97,7 +97,7 @@ Page({
         if (sm.confirm) {
           // 用户点击了确定 可以调用删除方法了
           wx.request({
-            url: "https://an.jabari.cn/superadmin/removearea",
+            url: "http://localhost:9090/superadmin/removearea",
             data: { "areaId": e.target.dataset.areaid },
             method: 'GET',
             success: function (res) {

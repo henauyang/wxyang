@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    areaId: undefined,
-    areaName: '',
+    wxId: undefined,
+    wxName: '',
     priority: '',
-    addUrl: "https://an.jabari.cn/superadmin/addarea",
-    modifyUrl: "https://an.jabari.cn/superadmin/modifyarea"
+    addUrl: "http://localhost:9090/superadmin/addarea",
+    modifyUrl: "http://localhost:9090/superadmin/modifyarea"
 
   },
   /**
@@ -19,14 +19,14 @@ Page({
     var that = this;
     // 页面初始化 options为页面跳转所带来的参数
     this.setData({
-      areaId: options.areaId
+      wxId: options.wxId
     });
-    if (options.areaId == undefined) {
+    if (options.wxId == undefined) {
       return;
     }
     wx.request({
-      url: "https://an.jabari.cn/superadmin/getareabyid",
-      data: { "areaId": options.areaId },
+      url: "http://localhost:9090/superadmin/getareabyid",
+      data: { "wxId": options.wxId },
       method: 'GET',
       success: function (res) {
         var area = res.data.area;
@@ -39,7 +39,7 @@ Page({
           });
         } else {
           that.setData({
-            areaName: area.areaName,
+            wxName: area.wxName,
             priority: area.priority
           });
         }

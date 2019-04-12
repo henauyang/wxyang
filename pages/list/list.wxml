@@ -11,12 +11,12 @@
       <block wx:for="{{list}}">
         <view class="widget">
           <view>
-            <text class="column">{{item.areaId}}</text>
-            <text class="column1">{{item.areaName}}</text>
+            <text class="column">{{item.wxId}}</text>
+            <text class="column1">{{item.wxName}}</text>
             <text class="column">{{item.priority}}</text>
             <view class="link-column">
-              <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">编辑</navigator>
-              <!-- <text class="link" bindtap="deleteArea" data-areaid="{{item.areaId}}" data-areaname="{{item.areaName}}" data-index="{{index}}">删除</text> -->
+              <navigator class="link" url="../operation/operation?areaId={{item.wxId}}">编辑</navigator>
+              <!-- <text class="link" bindtap="deleteArea" data-areaid="{{item.wxId}}" data-areaname="{{item.wxName}}" data-index="{{index}}">删除</text> -->
             </view>
           </view>
         </view>

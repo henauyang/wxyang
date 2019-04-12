@@ -13,7 +13,8 @@
     "pages/picture/picture",
     "pages/pictureDetail/pictureDetail",
     "pages/edit/deit",
-    "pages/gaijin/gaijin"
+    "pages/gaijin/gaijin",
+    "pages/detai/detai"
   ],
   "permission": {
     "scope.userLocation": {
@@ -48,5 +49,6 @@
         "selectedIconPath": "imgs/ic_join_pressed.png"
       }
     ]
-  }
+  },
+  "debug": true
 }

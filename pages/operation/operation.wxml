@@ -3,7 +3,7 @@
   <form bindsubmit="formSubmit" bindreset="formReset">
     <view class="row">
       <text>建议内容：</text>
-      <input type="text" name="areaName" placeholder="请输入新闻头" value="{{areaName}}" />
+      <input type="text" name="wxName" placeholder="请输入意见" value="{{wxName}}" />
     </view>
     <view class="row">
       <text>优先级：</text>

@@ -1,4 +1,5 @@
 //index.js
+const util = require('../../utils/util.js')
 //获取应用实例
 const app = getApp()
 
@@ -13,6 +14,8 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
+    hidden: false,
+    events: [],
     /**小消息提示**/
     imgUrls2: [
       '公告：小应用大作用小程序正式上线！',
@@ -25,5 +28,15 @@ Page({
     duration2: 1000,
     onLoad: function () {
     }
+  },
+  onLoad: function (options) {
+    // 页面初始化 options为页面跳转所带来的参数
+    var self = this
+    util.getEvents().then(function (data) {
+      self.setData({
+        hidden: true,
+        events: data
+      })
+    })
   }
 })
