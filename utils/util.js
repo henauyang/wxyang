@@ -19,7 +19,6 @@ function fetchEvents(today) {
   })
   return promise
 }
-
 function getEvents() {
   var tmpDate = new Date()
   var today = tmpDate.getMonth() + 1
